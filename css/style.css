@@ -1,0 +1,202 @@
+html {
+  font-family: Helvetica, sans-serif;
+}
+#nav-lms,
+#nav-links,
+#logo-img {
+  display: flex;
+  flex-direction: row;
+}
+#logo {
+  display: flex;
+  max-width: 100%;
+}
+#logo-img {
+  width: 40%;
+  max-height: 6.5vw;
+  margin: 10px;
+}
+#logo-name {
+  display: flex;
+  width: 100%;
+  font-size: 1.25rem;
+  margin-left: 1rem;
+  flex-direction: column;
+  letter-spacing: 1px;
+  justify-content: center;
+  align-items: center;
+}
+#nav-lms {
+  position: sticky;
+  justify-content: space-between;
+  width: 100%;
+  height: 132px;
+  margin: 0px 0px;
+  background-color: white;
+  box-shadow: 0px 0px 5px 0px rgba(127, 127, 127, 0.75);
+}
+
+/* .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+} for sticky navbar */
+
+#nav-lms a {
+  font-size: 1.75em;
+  padding: 45px;
+  margin: 0px;
+  text-decoration: none;
+  color: black;
+}
+#nav-lms li:not(:last-child) {
+  border-right: 1px solid lightgray;
+}
+#nav-lms li {
+  list-style: none;
+}
+body {
+  margin: 0px 0px;
+}
+#nav-links {
+  padding-inline-start: 5px;
+  justify-content: flex-end;
+}
+.nav-link:hover {
+  background-color: lightgray;
+  color: white;
+}
+#library-header {
+  display: flex;
+  width: 100%;
+  height: 10vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 10px solid rgb(215, 99, 76);
+  background-image: linear-gradient(
+    62deg,
+    rgb(0, 101, 145) 0%,
+    rgb(1, 125, 177) 100%
+  );
+}
+.header-name {
+  letter-spacing: 2px;
+  font-size: 3.5rem;
+  font-weight: 650;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+.carousel-inner {
+  height: 60vh;
+}
+.d-block w-100 {
+  display: block;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+}
+.carousel-indicators {
+  margin-bottom: 35px;
+}
+#getting-started,
+#books {
+  display: flex;
+  flex-direction: column;
+  box-sizing: inherit;
+  position: relative;
+  width: 85%;
+  height: 50vw;
+  margin: -35px auto auto;
+  background-color: rgb(228, 228, 228);
+  justify-content: center;
+  align-items: center;
+}
+.body-headings {
+  font-size: 5rem;
+  color: rgb(32, 32, 32);
+  font-weight: 650;
+  letter-spacing: 2px;
+  margin: 0px;
+  padding: 0;
+}
+.body-subheadings {
+  font-size: 2.5rem;
+  color: rgb(67, 66, 66);
+  letter-spacing: 10px;
+  margin: 0px;
+  padding: 0px;
+}
+#how-to {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.how-to-sections {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: rgb(250, 234, 228);
+  width: 25%;
+  margin: calc(25% / 6);
+  padding: 25px;
+  background-color: salmon;
+  box-shadow: -16px 16px rgb(19, 115, 163);
+}
+.how-to-links,
+.how-to-links:hover {
+  text-decoration: none;
+  color: rgb(250, 234, 228);
+}
+.how-to-sections h3 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  line-height: 3.5rem;
+}
+.how-to-sections > h3 {
+  margin-bottom: 80px;
+}
+.how-to-sections p {
+  font-size: 1.125rem;
+  margin-top: 15px;
+}
+#books {
+  margin-top: 100px;
+  padding-top: 50px;
+}
+#books-container {
+  width: 75%;
+  height: 35vw;
+  margin: 5% 25px;
+  background-color: rgb(19, 115, 163);
+  border-radius: 15px;
+}
+#footer-lms {
+  background-color: rgb(88, 88, 88);
+  width: 100%;
+  height: 10vw;
+  margin-top: 10rem;
+  padding: 1.5rem;
+  text-align: justify;
+}
+#footer-lms-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(217, 214, 214);
+}
+#about-details {
+  width: 40%;
+  font-size: 1.1em;
+}
+#contacts-lms {
+  line-height: 0;
+}
+#contact-name {
+  font-size: 2.5rem;
+}
+#contact-email {
+  font-size: 1.25rem;
+}
