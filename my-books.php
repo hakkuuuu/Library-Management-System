@@ -1,5 +1,8 @@
-<?php require_once "includes/header.php" ?>
+<?php
+    $title = "My Books";
+    require_once 'includes/header.php';
+?>
     
-<?php echo "my books page"; ?>
+    <h1>Home</h1>
 
-<?php require_once "includes/footer.php" ?>
+<?php require_once 'includes/footer.php'; ?>
