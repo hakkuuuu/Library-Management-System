@@ -10,28 +10,17 @@
   </head>
   <body>
 
-  <nav id="nav-lms">
-    <span id="logo">
-      <img src="css/logo.png" alt="School Logo" id="logo-img" />
-        <span id="logo-name">
-          <h2>Tabaco National <br />High School</h2>
-        </span>
-    </span>
 
-    <ul id="nav-links">
-      <li><a href="About" class="nav-link">About</a></li>
-      <li><a href="login.php" class="nav-link">Login</a></li>
-    </ul>
-  </nav>
-    <h1>Login</h1>
-    <form method="get" action="index.php">
-        <div class="form-group">           
-            <input type="text" id="libraryID" placeholder="Library ID">
-            <label for="libraryID" class="form-label">Library ID</label>
+  <div class="center">
+      <h1>Login</h1>
+      <form method="post" action="index.php">
+        <div class="txt_field">
+          <input type="text" required />
+          <span></span>
+          <label>Library ID</label>
         </div>
-        <button type="submit" class="btn btn-primary">Login</button>
+        <input type="submit" value="Login" />
         <div class="signup_link">
-            No library ID? <a href="#">Request Here</a>
+          No library ID? <a href="#">Request Here</a>
         </div>
-    </form>
-<?php require_once 'includes/footer.php'; ?>
+      </form>

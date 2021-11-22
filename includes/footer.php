@@ -1,5 +1,4 @@
 
-    <hr>
     <footer id="footer-lms">
     <div id="footer-lms-container">
       <div id="about-details">
