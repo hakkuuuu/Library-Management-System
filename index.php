@@ -2,7 +2,6 @@
     $title = "Home";
     require_once 'includes/header.php';
 ?>
-    <h1>Site Home</h1>
     <header id="library-header">
       <h1 class="header-name">LIBRARY MANAGEMENT</h1>
       <h1 class="header-name">SYSTEM</h1>
@@ -99,5 +98,5 @@
       <h3 class="body-subheadings">SEE WHAT INTERESTS YOU</h3>
       <div id="books-container"></div>
     </div>
-  </body>
+
 <?php require_once 'includes/footer.php'; ?>

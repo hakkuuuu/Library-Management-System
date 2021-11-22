@@ -25,9 +25,9 @@
   </nav>
     <h1>Login</h1>
     <form method="get" action="index.php">
-        <div class="form-group">
-            <label for="libraryID" class="form-label">Library ID</label>
+        <div class="form-group">           
             <input type="text" id="libraryID" placeholder="Library ID">
+            <label for="libraryID" class="form-label">Library ID</label>
         </div>
         <button type="submit" class="btn btn-primary">Login</button>
         <div class="signup_link">
