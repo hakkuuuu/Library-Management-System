@@ -1,7 +1,38 @@
-<?php
-    $title = "Home";
-    require_once 'includes/header.php';
-?>
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" href="css/style.css" />
+  <link
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library Management System</title>
+  </head>
+
+    <nav id="nav-lms">
+      <span id="logo">
+        <img src="css/logo.png" alt="School Logo" id="logo-img" />
+        <span id="logo-name">
+          <h2>Tabaco National <br />High School</h2>
+        </span>
+      </span>
+      <ul id="nav-links">
+        <li><a href="index.php" class="nav-link">Home</a></li>
+        <li><a href="about.php" class="nav-link">About</a></li>
+        <li><a href="login.php" class="nav-link">Login</a></li>
+      </ul>
+    </nav>
+
+    <!-- <script src="navbar.js"></script>
+    for sticky navbar. use after flexbox is fixed -->
+
     <header id="library-header">
       <h1 class="header-name">LIBRARY MANAGEMENT</h1>
       <h1 class="header-name">SYSTEM</h1>
@@ -69,7 +100,7 @@
       <div id="how-to">
         <section class="how-to-sections">
           <h3>HOW TO</h3>
-          <a href="#request" class="how-to-links">
+          <a href="login.php" class="how-to-links">
             <h3>Request a</h3>
             <h3>Book</h3>
             <p>Learn how to request a book from the library!</p>
@@ -77,7 +108,7 @@
         </section>
         <section class="how-to-sections">
           <h3>HOW TO</h3>
-          <a href="#return" class="how-to-links">
+          <a href="login.php" class="how-to-links">
             <h3>Return a</h3>
             <h3>Book</h3>
             <p>Learn how to return a book from the library!</p>
@@ -85,7 +116,7 @@
         </section>
         <section class="how-to-sections">
           <h3>MORE</h3>
-          <a href="#more" class="how-to-links">
+          <a href="login.php" class="how-to-links">
             <h3>Library</h3>
             <h3>Hours</h3>
             <p>Do know when to go to the library!</p>
@@ -98,5 +129,6 @@
       <h3 class="body-subheadings">SEE WHAT INTERESTS YOU</h3>
       <div id="books-container"></div>
     </div>
-
-<?php require_once 'includes/footer.php'; ?>
+  
+  <?php require_once 'includes/footer.php'; ?>
+</html>

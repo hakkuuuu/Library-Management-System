@@ -13,7 +13,7 @@
 
   <div class="center">
       <h1>Login</h1>
-      <form method="post" action="index.php">
+      <form method="post" action="site-home.php">
         <div class="txt_field">
           <input type="text" required />
           <span></span>

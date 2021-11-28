@@ -18,7 +18,7 @@
     </span>
 
     <ul id="nav-links">
-      <li><a href="index.php" class="nav-link">Site Home</a></li>
+      <li><a href="site-home.php" class="nav-link">Site Home</a></li>
       <li><a href="browse.php" class="nav-link">Browse</a></li>
       <li><a href="my-books.php" class="nav-link">My books</a></li>
       <li><a href="more.php" class="nav-link">More</a></li>
