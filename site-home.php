@@ -6,6 +6,7 @@
       <h1 class="header-name">LIBRARY MANAGEMENT</h1>
       <h1 class="header-name">SYSTEM</h1>
     </header>
+    
     <div
       id="carousel"
       class="carousel slide"
@@ -22,7 +23,7 @@
         <div class="carousel-item active">
           <img
             class="d-block w-100"
-            src="/images/first.jpg"
+            src="img/crsl1.jpg"
             alt="Second slide"
           />
         </div>
@@ -30,7 +31,7 @@
         <div class="carousel-item">
           <img
             class="d-block w-100"
-            src="/images/second.jpg"
+            src="img/crsl2.jpg"
             alt="First slide"
           />
         </div>
@@ -38,7 +39,7 @@
         <div class="carousel-item" id="image2">
           <img
             class="d-block w-100"
-            src="/images/third.jpg"
+            src="img/crsl3.jpg"
             alt="Third slide"
           />
         </div>
@@ -51,7 +52,7 @@
         data-slide="prev"
       >
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
+        <span class="sr-only"></span>
       </a>
       <a
         class="carousel-control-next"
@@ -60,7 +61,7 @@
         data-slide="next"
       >
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
+        <span class="sr-only"></span>
       </a>
     </div>
     <div id="getting-started">

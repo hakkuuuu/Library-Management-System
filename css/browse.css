@@ -1,0 +1,22 @@
+/* #browsing {
+  position: sticky;
+  width: 100%;
+  height: 132px;
+  margin: 0px 0px;
+  background-color: rgba(0, 73, 184, 0.712);
+}
+#browse-opts {
+  list-style: none;
+  padding-inline-start: 1300px;
+  justify-content: flex-end;
+  font-size: 1.5em;
+}
+
+.browse-opt {
+  color: rgb(255, 255, 255);
+  flex-direction: row;
+} */
+
+#navbarNavDarkDropdown:hover > dropdown-menu {
+  display: block;
+}

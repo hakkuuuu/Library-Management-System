@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/browse.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">  
     <title>Library - <?php echo $title; ?></title>
   </head>
@@ -22,5 +23,8 @@
       <li><a href="browse.php" class="nav-link">Browse</a></li>
       <li><a href="my-books.php" class="nav-link">My books</a></li>
       <li><a href="more.php" class="nav-link">More</a></li>
+
+      
     </ul>
   </nav>
+  

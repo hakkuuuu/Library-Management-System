@@ -3,8 +3,7 @@
   <link rel="stylesheet" href="css/style.css" />
   <link
     href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    rel="stylesheet"
-  />
+    rel="stylesheet"/>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -53,7 +52,7 @@
         <div class="carousel-item active">
           <img
             class="d-block w-100"
-            src="/images/first.jpg"
+            src="img/crsl1.jpg"
             alt="Second slide"
           />
         </div>
@@ -61,7 +60,7 @@
         <div class="carousel-item">
           <img
             class="d-block w-100"
-            src="/images/second.jpg"
+            src="img/crsl2.jpg"
             alt="First slide"
           />
         </div>
@@ -69,7 +68,7 @@
         <div class="carousel-item" id="image2">
           <img
             class="d-block w-100"
-            src="/images/third.jpg"
+            src="img/crsl3.jpg"
             alt="Third slide"
           />
         </div>
@@ -82,7 +81,7 @@
         data-slide="prev"
       >
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
+        <span class="sr-only"></span>
       </a>
       <a
         class="carousel-control-next"
@@ -91,7 +90,7 @@
         data-slide="next"
       >
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
+        <span class="sr-only"></span>
       </a>
     </div>
     <div id="getting-started">

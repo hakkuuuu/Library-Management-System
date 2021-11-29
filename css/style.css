@@ -200,3 +200,12 @@ body {
 #contact-email {
   font-size: 1.25rem;
 }
+
+#browsing li {
+  list-style: none;
+}
+
+#browse-opts {
+  padding-inline-start: 5px;
+  justify-content: flex-end;
+}
