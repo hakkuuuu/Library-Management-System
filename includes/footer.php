@@ -10,9 +10,10 @@
         </p>
         <p>Copyright 2021 Mtech</p>
       </div>
+
       <div id="contacts-lms">
-        <h1 id="contact-name">Muperidol Technology</h1>
-        <p id="contact-email">muperidoltech@gmail.com</p>
+        <h1 id="contact-name">MTechnology</h1>
+        <p id="contact-email">mtech@gmail.com</p>
         
       </div>
     </div>

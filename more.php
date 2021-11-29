@@ -3,6 +3,8 @@
     require_once 'includes/header.php';
 ?>
     
-    <h1>More</h1>
+    <p class="fw-bold">Stay in touch.</p>
+    <p class="fw-normal">https://schoolname-edu.ph</p>
+    <p class="fw-normal">schoolname@edu.ph</p>
 
 <?php require_once 'includes/footer.php'; ?>
