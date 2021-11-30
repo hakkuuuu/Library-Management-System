@@ -9,7 +9,7 @@
           consectetur dicta reiciendis rem incidunt explicabo recusandae
           corrupti architecto molestiae aliquam maiores.
         </p>
-        <p>Copyright 2021 LMS. All Rights Reserved.</p>
+        <p>Copyright 2021 Mtech</p>
       </div>
 
       <div id="contacts-lms">
