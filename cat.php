@@ -3,8 +3,8 @@
     require_once "includes/header.php";
 ?>
 
-    <ul>
-        <li> Philosophy</li>
+    <ul class="container">
+        <li>Philosophy</li>
         <li>Math</li>
         <li>Science</li>
         <li>English</li>
