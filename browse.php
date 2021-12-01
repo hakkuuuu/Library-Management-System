@@ -4,8 +4,16 @@
     require_once 'database/conn.php';
 ?>
 
-  
+<br>
   <div class="container">
+    <div id="buttons">
+      <ul>
+          <li><a href="#">Subjects</a></li>
+          <li><a href="">/</a></li>
+          <li><a href="#">Sort</a></li>
+      </ul>
+    </div>
+  
     <h1>List of available books</h1>
     <div class="table-responsive">
       <table class="table align-middle">

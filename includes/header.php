@@ -14,7 +14,7 @@
     <span id="logo">
       <img src="img/logo.png" alt="School Logo" id="logo-img" />
         <span id="logo-name">
-          <h2>Tabaco National <br/>High School</h2>
+          <h2>Banquerohan National<br/>High School</h2>
         </span>
     </span>
 
