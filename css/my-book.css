@@ -1,0 +1,35 @@
+#my-book {
+  float: right;
+  position: relative;
+  left: -80%;
+  text-align: left;
+}
+#my-book ul {
+  list-style: none;
+  position: relative;
+  left: 50%;
+}
+
+#my-book li {
+  float: left;
+  position: relative;
+  font-size: 20px;
+} /* ie needs position:relative here*/
+
+#my-book a {
+  text-decoration: none;
+  margin: 10px;
+  background: rgb(255, 255, 255);
+  float: left;
+  color: rgb(0, 0, 0);
+  padding: 2px 5px;
+  text-align: center;
+  white-space: nowrap;
+}
+#my-book a:hover {
+  color: rgb(0, 0, 0);
+  background: #e9e9e9;
+}
+#content {
+  overflow: hidden;
+} /* hide horizontal scrollbar*/

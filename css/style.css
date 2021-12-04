@@ -190,6 +190,7 @@ body {
 #about-details {
   width: 40%;
   font-size: 1.1em;
+  bottom: 10px;
 }
 #contacts-lms {
   line-height: 0;

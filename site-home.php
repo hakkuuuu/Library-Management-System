@@ -4,8 +4,7 @@
 ?>
 
     <header id="library-header">
-      <h1 class="header-name">LIBRARY MANAGEMENT</h1>
-      <h1 class="header-name">SYSTEM</h1>
+      <h1 class="header-name">BNHS: Online Library</h1>
     </header>
     
     <div
