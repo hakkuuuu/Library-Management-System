@@ -23,9 +23,9 @@
     </span>
 
     <ul id="nav-links">
-      <li><a href="site-home.php" class="nav-link">Update</a></li>
-      <li><a href="browse.php" class="nav-link">Yeet</a></li>
-      <li><a href="my-books.php" class="nav-link">Logout</a></li>
+      <li><a href="site-home.php" class="nav-link">Dashboard</a></li>
+      <li><a href="issued.php" class="nav-link">Issued Books</a></li>
+      <li><a href="#.php" class="nav-link">Logout</a></li>
     </ul>
   </nav>
   
