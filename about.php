@@ -13,7 +13,10 @@
     <span id="logo">
       <img src="img/logo.png" alt="School Logo" id="logo-img" />
         <span id="logo-name">
-          <h2>Banquerohan National <br />High School</h2>
+          <h2>
+            Banquerohan <br />
+            National High School
+          </h2>
         </span>
     </span>
   
@@ -25,8 +28,7 @@
   </nav>
 
   <header id="library-header">
-    <h1 class="header-name">LIBRARY MANAGEMENT</h1>
-    <h1 class="header-name">SYSTEM</h1>
+    <h1 class="header-name">BNHS LIBRARY</h1>
   </header>
     <br>
     <h1 class="text-center">About page</h1>
