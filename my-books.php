@@ -8,14 +8,6 @@
   </header>
   <br>
   
-  <div class="container">
-    <div id="my-book">
-      <ul>
-          <li><a href="#">Borrowed books</a></li><br>
-          <li><a href="#">Pending request</a></li>
-      </ul>
-    </div>
-  </div>
   
 
 <?php require_once 'includes/footer.php'; ?>
