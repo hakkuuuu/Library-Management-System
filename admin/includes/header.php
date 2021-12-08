@@ -12,19 +12,20 @@
   <body>
 
   <nav id="nav-lms">
-      <span id="logo">
-        <img src="/img/logo.png" alt="School Logo" id="logo-img" />
+    <span id="logo">
+      <img src="img/logo.png" alt="School Logo" id="logo-img"/>
         <span id="logo-name">
           <h2>
-            Banquerohan <br />
+            Banquerohan <br/>
             National High School
           </h2>
         </span>
-      </span>
-      <ul id="nav-links">
-        <li><a href="" class="nav-link">Home</a></li>
-        <li><a href="" class="nav-link">Update</a></li>
-        <li><a href="" class="nav-link">Logout</a></li>
-      </ul>
-    </nav>
+    </span>
+
+    <ul id="nav-links">
+      <li><a href="site-home.php" class="nav-link">Update</a></li>
+      <li><a href="browse.php" class="nav-link">Yeet</a></li>
+      <li><a href="my-books.php" class="nav-link">Logout</a></li>
+    </ul>
+  </nav>
   

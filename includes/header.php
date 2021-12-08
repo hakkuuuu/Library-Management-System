@@ -13,10 +13,10 @@
 
   <nav id="nav-lms">
     <span id="logo">
-      <img src="img/logo.png" alt="School Logo" id="logo-img" />
+      <img src="img/logo.png" alt="School Logo" id="logo-img"/>
         <span id="logo-name">
           <h2>
-            Banquerohan <br />
+            Banquerohan <br/>
             National High School
           </h2>
         </span>
