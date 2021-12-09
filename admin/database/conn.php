@@ -3,7 +3,7 @@
         $host = "localhost";
         $user = "root";
         $pass = "";
-        $db = "lmsdb";
+        $db = "librarydb";
 
         $con = new mysqli($host, $user, $pass, $db);
 

@@ -15,7 +15,7 @@
         VALUES ('$title','$sub','$copies','$rem')";
         $con->query($sql) or die($con->error);
 
-        echo header("Location: issue.php");
+        echo header("Location: issued.php");
     }
 
 ?>

@@ -7,6 +7,9 @@
       <h1 class="header-name">BNHS LIBRARY</h1>
     </header>
     
-   
+   <br>
+   <br>
+   <br>
+   <br>
 
 <?php require_once 'includes/footer.php'; ?>
