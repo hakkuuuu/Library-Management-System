@@ -26,13 +26,13 @@
     <div class="container">
     <form action="" method="post">
         <label>Book Title</label>
-        <input type="text" name="booktitle">
+        <input type="text" name="booktitle" required>
         <label>Subject</label>
-        <input type="text" name="subject">
+        <input type="text" name="subject" required>
         <label>Copies</label>
-        <input type="text" name="copies">
+        <input type="text" name="copies" required>
         <label>Remarks</label>
-        <input type="text" name="remarks">
+        <input type="text" name="remarks"required>
 
         <input type="submit" name="submit" value="submit">
    </form>
