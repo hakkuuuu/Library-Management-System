@@ -2,12 +2,12 @@
 require('dbconn.php');
 ?>
 
-<?php 
+<?php
 if ($_SESSION['RollNo']) {
-    ?>
+?>
 
-<!DOCTYPE html>
-<html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
 
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -17,9 +17,9 @@ if ($_SESSION['RollNo']) {
         <link type="text/css" href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
         <link type="text/css" href="css/theme.css" rel="stylesheet">
         <link type="text/css" href="images/icons/css/font-awesome.css" rel="stylesheet">
-        <link type="text/css" href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600'
-            rel='stylesheet'>
+        <link type="text/css" href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600' rel='stylesheet'>
     </head>
+
     <body>
         <div class="navbar navbar-fixed-top">
             <div class="navbar-inner">
@@ -29,8 +29,8 @@ if ($_SESSION['RollNo']) {
                     <div class="nav-collapse collapse navbar-inverse-collapse">
                         <ul class="nav pull-right">
                             <li class="nav-user dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <img src="images/user.png" class="nav-avatar" />
-                                <b class="caret"></b></a>
+                                    <img src="images/user.png" class="nav-avatar" />
+                                    <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     <li><a href="index.php">Your Profile</a></li>
                                     <!--li><a href="#">Edit Profile</a></li>
@@ -54,7 +54,7 @@ if ($_SESSION['RollNo']) {
                         <div class="sidebar">
                             <ul class="widget widget-menu unstyled">
                                 <li class="active"><a href="index.php"><i class="menu-icon icon-home"></i>Home
-                                </a></li>
+                                    </a></li>
                                 </li>
                                 <li><a href="student.php"><i class="menu-icon icon-user"></i>Manage Students </a>
                                 </li>
@@ -72,16 +72,16 @@ if ($_SESSION['RollNo']) {
                     <!--/.span3-->
                     <!--/.span9-->
                     <div class="span9">
-                    <div class="content">
+                        <div class="content">
 
-                        <div class="module">
-                            <div class="module-head">
-                                <h3>Add Book</h3>
-                            </div>
-                            <div class="module-body">
+                            <div class="module">
+                                <div class="module-head">
+                                    <h3>Add Book</h3>
+                                </div>
+                                <div class="module-body">
 
-                                    
-                                    <br >
+
+                                    <br>
 
                                     <form class="form-horizontal row-fluid" action="addbook.php" method="post">
                                         <div class="control-group">
@@ -117,21 +117,22 @@ if ($_SESSION['RollNo']) {
                                                 <input type="text" id="availability" name="availability" placeholder="Number of Copies" class="span8" required>
                                             </div>
                                         </div>
-                                        
+
 
                                         <div class="control-group">
                                             <div class="controls">
-                                                <button type="submit" name="submit"class="btn">Add Book</button>
+                                                <button type="submit" name="submit" class="btn">Add Book</button>
                                             </div>
                                         </div>
                                     </form>
+                                </div>
                             </div>
-                        </div>
 
-                        
-                        
-                    </div><!--/.content-->
-                </div>
+
+
+                        </div>
+                        <!--/.content-->
+                    </div>
 
                 </div>
             </div>
@@ -140,12 +141,12 @@ if ($_SESSION['RollNo']) {
         </div>
 
 
-<div class="footer">
+        <div class="footer">
             <div class="container">
                 <b class="copyright">&copy; 2018 Library Management System </b>All rights reserved.
             </div>
         </div>
-        
+
         <!--/.wrapper-->
         <script src="scripts/jquery-1.9.1.min.js" type="text/javascript"></script>
         <script src="scripts/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
@@ -155,49 +156,46 @@ if ($_SESSION['RollNo']) {
         <script src="scripts/datatables/jquery.dataTables.js" type="text/javascript"></script>
         <script src="scripts/common.js" type="text/javascript"></script>
 
-<?php
-if(isset($_POST['submit']))
-{
-    $title=$_POST['title'];
-    $author1=$_POST['author1'];
-    $author2=$_POST['author2'];
-    $author3=$_POST['author3'];
-    $publisher=$_POST['publisher'];
-    $year=$_POST['year'];
-    $availability=$_POST['availability'];
+        <?php
+        if (isset($_POST['submit'])) {
+            $title = $_POST['title'];
+            $author1 = $_POST['author1'];
+            $author2 = $_POST['author2'];
+            $author3 = $_POST['author3'];
+            $publisher = $_POST['publisher'];
+            $year = $_POST['year'];
+            $availability = $_POST['availability'];
 
-$sql1="insert into LMS.book (Title,Publisher,Year,Availability) values ('$title','$publisher','$year','$availability')";
+            $sql1 = "insert into LMS.book (Title,Publisher,Year,Availability) values ('$title','$publisher','$year','$availability')";
 
-if($conn->query($sql1) === TRUE){
-$sql2="select max(BookId) as x from LMS.book";
-$result=$conn->query($sql2);
-$row=$result->fetch_assoc();
-$x=$row['x'];
-$sql3="insert into LMS.author values ('$x','$author1')";
-$result=$conn->query($sql3);
-if(!empty($author2))
-{ $sql4="insert into LMS.author values('$x','$author2')";
-  $result=$conn->query($sql4);}
-if(!empty($author3))
-{ $sql5="insert into LMS.author values('$x','$author3')";
-  $result=$conn->query($sql5);}
+            if ($conn->query($sql1) === TRUE) {
+                $sql2 = "select max(BookId) as x from LMS.book";
+                $result = $conn->query($sql2);
+                $row = $result->fetch_assoc();
+                $x = $row['x'];
+                $sql3 = "insert into LMS.author values ('$x','$author1')";
+                $result = $conn->query($sql3);
+                if (!empty($author2)) {
+                    $sql4 = "insert into LMS.author values('$x','$author2')";
+                    $result = $conn->query($sql4);
+                }
+                if (!empty($author3)) {
+                    $sql5 = "insert into LMS.author values('$x','$author3')";
+                    $result = $conn->query($sql5);
+                }
 
-echo "<script type='text/javascript'>alert('Success')</script>";
-}
-else
-{//echo $conn->error;
-echo "<script type='text/javascript'>alert('Error')</script>";
-}
-    
-}
-?>
-      
+                echo "<script type='text/javascript'>alert('Success')</script>";
+            } else { //echo $conn->error;
+                echo "<script type='text/javascript'>alert('Error')</script>";
+            }
+        }
+        ?>
+
     </body>
 
-</html>
+    </html>
 
 
-<?php }
-else {
+<?php } else {
     echo "<script type='text/javascript'>alert('Access Denied!!!')</script>";
 } ?>
