@@ -8,6 +8,7 @@ $title = "menu";
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/menu-navbar.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/browse.css">
     <link rel="stylesheet" href="css/my-book.css">
@@ -16,7 +17,6 @@ $title = "menu";
 </head>
 
 <body>
-
     <nav id="nav-lms">
         <span id="logo">
             <img src="img/logo.png" alt="School Logo" id="logo-img" />
@@ -37,13 +37,15 @@ $title = "menu";
         <h1 class="header-name">BNHS LIBRARY</h1>
     </header>
 
-    <ul>
-        <li><a href="book.php">All books</a></li>
-        <li><a href="addbook.php">Add Books</a></li>
-        <li><a href="requests.php">Issue Return request</a></li>
-        <li><a href="current.php">Currently Issued Books</a></li>
-        <li><a href="student.php">Manages Students</a></li>
-    </ul>
+    <nav >
+        <ul id="nav-menu">
+            <li class="nav-menu-links"><a class="menu-link" href="book.php">All books</a></li>
+            <li class="nav-menu-links"><a class="menu-link" href="addbook.php">Add Books</a></li>
+            <li class="nav-menu-links"><a class="menu-link" href="requests.php">Issue Return request</a></li>
+            <li class="nav-menu-links"><a class="menu-link" href="current.php">Currently Issued Books</a></li>
+            <li class="nav-menu-links"><a class="menu-link" href="student.php">Manages Students</a></li>
+        </ul>
+    </nav>
 </body>
 
 

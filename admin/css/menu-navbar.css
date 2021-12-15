@@ -1,0 +1,47 @@
+@import "style.css";
+#nav-menu {
+    display: flex;
+    flex-direction: column;
+    position: block;
+    justify-content: space-evenly;
+    min-width: 290px;
+    width: 250px;
+    height: 75vw;
+    top: 27.8vw;
+    left: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 30vw;
+    background-color: rgb(1, 125, 177);
+    border-right: solid;
+    border-color: #4F5D75;
+}
+.nav-menu-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+.menu-link {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+}
+.menu-link:hover {
+    background-color: #4F5D75;
+    color: white;
+}
+@media only screen and (min-width: 768px) {
+    .menu-link {
+        font-size: 1.5em;
+    }
+    .nav-menu-links {
+        margin: 0px;
+    }
+    #nav-menu {
+        width: 300px;
+        height: 75vw;
+        top: 27.8vw;
+        left: 0px;
+        margin-bottom: 0px;
+        padding-bottom: 30vw;
+    }
+}
