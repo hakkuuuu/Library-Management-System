@@ -1,0 +1,10 @@
+#menu-navbar {
+    position: fixed;
+    min-width: 290px;
+    width: 250px;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    border-right: solid;
+    border-color: #4F5D75; 
+}
