@@ -15,69 +15,52 @@ if ($_SESSION['RollNo']) {
         <title>LMS</title>
         <link type="text/css" href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link type="text/css" href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
-        <link type="text/css" href="css/theme.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link type="text/css" href="css/style.css" rel="stylesheet">
+        <link type="text/css" href="css/menu-navbar.css" rel="stylesheet">
         <link type="text/css" href="images/icons/css/font-awesome.css" rel="stylesheet">
         <link type="text/css" href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600' rel='stylesheet'>
     </head>
 
     <body>
-        <div class="navbar navbar-fixed-top">
-            <div class="navbar-inner">
-                <div class="container">
-                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".navbar-inverse-collapse">
-                        <i class="icon-reorder shaded"></i></a><a class="brand" href="index.php">LMS </a>
-                    <div class="nav-collapse collapse navbar-inverse-collapse">
-                        <ul class="nav pull-right">
-                            <li class="nav-user dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                    <img src="images/user.png" class="nav-avatar" />
-                                    <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="index.php">Your Profile</a></li>
-                                    <!--li><a href="#">Edit Profile</a></li>
-                                    <li><a href="#">Account Settings</a></li-->
-                                    <li class="divider"></li>
-                                    <li><a href="logout.php">Logout</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- /.nav-collapse -->
-                </div>
-            </div>
-            <!-- /navbar-inner -->
-        </div>
-        <!-- /navbar -->
+    <nav id="nav-lms">
+        <span id="logo">
+            <img src="img/logo.png" alt="School Logo" id="logo-img" />
+            <span id="logo-name">
+                <h2>
+                    Banquerohan <br/>
+                    National High School
+                </h2>
+            </span>
+        </span>
+        <ul id="nav-links">
+            <li><a href="menu.php" class="nav-link">Dashboard</a></li>
+            <li><a href="adminindex.php" class="nav-link">Logout</a></li>
+        </ul>
+    </nav>
+    <header id="library-header">
+        <h1 class="header-name">BNHS LIBRARY</h1>
+    </header>
         <div class="wrapper">
             <div class="container">
                 <div class="row">
-                    <div class="span3">
-                        <div class="sidebar">
-                            <ul class="widget widget-menu unstyled">
-                                <li class="active"><a href="index.php"><i class="menu-icon icon-home"></i>Home
-                                    </a></li>
-                                </li>
-                                <li><a href="student.php"><i class="menu-icon icon-user"></i>Manage Students </a>
-                                </li>
-                                <li><a href="book.php"><i class="menu-icon icon-book"></i>All Books </a></li>
-                                <li><a href="addbook.php"><i class="menu-icon icon-edit"></i>Add Books </a></li>
-                                <li><a href="requests.php"><i class="menu-icon icon-tasks"></i>Issue/Return Requests </a></li>
-                                <li><a href="current.php"><i class="menu-icon icon-list"></i>Currently Issued Books </a></li>
-                            </ul>
-                            <ul class="widget widget-menu unstyled">
-                                <li><a href="logout.php"><i class="menu-icon icon-signout"></i>Logout </a></li>
-                            </ul>
-                        </div>
-                        <!--/.sidebar-->
-                    </div>
-                    <!--/.span3-->
-
                     <div class="span9">
+                    <nav>
+                        <ul id="nav-menu">
+                            <li class="nav-menu-links"><a class="menu-link" href="book.php">All books</a></li>
+                            <li class="nav-menu-links"><a class="menu-link" href="addbook.php">Add Books</a></li>
+                            <li class="nav-menu-links"><a class="menu-link" href="requests.php">Issue Return request</a></li>
+                            <li class="nav-menu-links"><a class="menu-link" href="current.php">Currently Issued Books</a></li>
+                            <li class="nav-menu-links"><a class="menu-link" href="student.php">Manages Students</a></li>
+                        </ul>
+                    </nav>
+                        <div class="search-container">
                         <form class="form-horizontal row-fluid" action="current.php" method="post">
                             <div class="control-group">
-                                <label class="control-label" for="Search"><b>Search:</b></label>
+                                <label class="control-label" for="Search"><b></b></label>
                                 <div class="controls">
                                     <input type="text" id="title" name="title" placeholder="Enter Roll No of Student/Book Name/Book Id." class="span8" required>
-                                    <button type="submit" name="submit" class="btn">Search</button>
+                                    <button type="submit" name="submit" class="btn btn-primary">Search</button>
                                 </div>
                             </div>
                         </form>
@@ -105,7 +88,6 @@ if ($_SESSION['RollNo']) {
                                         <th>Book name</th>
                                         <th>Issue Date</th>
                                         <th>Due date</th>
-                                        <th>Dues</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -121,7 +103,6 @@ if ($_SESSION['RollNo']) {
                                         $name = $row['Title'];
                                         $issuedate = $row['Date_of_Issue'];
                                         $duedate = $row['Due_Date'];
-                                        $dues = $row['x'];
 
                                     ?>
 
@@ -131,16 +112,12 @@ if ($_SESSION['RollNo']) {
                                             <td><?php echo $name ?></td>
                                             <td><?php echo $issuedate ?></td>
                                             <td><?php echo $duedate ?></td>
-                                            <td><?php if ($dues > 0)
-                                                    echo "<font color='red'>" . $dues . "</font>";
-                                                else
-                                                    echo "<font color='green'>0</font>";
-                                                ?>
                                         </tr>
                                 <?php }
                                 } ?>
                                 </tbody>
                             </table>
+                        </div>
                     </div>
 
                     <!--/.span9-->

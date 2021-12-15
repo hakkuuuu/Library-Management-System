@@ -1,11 +1,12 @@
 @import "style.css";
+
 #nav-menu {
     display: flex;
     flex-direction: column;
     position: block;
     justify-content: space-evenly;
-    min-width: 290px;
-    width: 250px;
+    min-width: 190px;
+    width: 200px;
     height: 75vw;
     top: 27.8vw;
     left: 0px;
@@ -38,10 +39,30 @@
     }
     #nav-menu {
         width: 300px;
-        height: 75vw;
+        height: 100%;
         top: 27.8vw;
         left: 0px;
         margin-bottom: 0px;
         padding-bottom: 30vw;
     }
 }
+
+.container {
+    margin: 0px;
+    padding: 0px;
+}
+.search-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 15vw;
+    width: 100%;
+  }
+  .issue-return-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 15vw;
+    width: 100%;
+  }
+  
