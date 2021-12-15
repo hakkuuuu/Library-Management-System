@@ -39,3 +39,13 @@ managing book requests, records, book lists,
 and track every request a student will make.
 To achieve the said purpose using methods
 that are time-efficient and cost-effective.
+
+---
+
+### _Target Functionalities_
+
+The target functionalities for this Library
+Management System are:
+
+- Admin: Approve/Reject/Renew Requests, View Issued Books, Manage Students
+- Student: Request for Book, View Previously Borrowed Books, View Issued Books
