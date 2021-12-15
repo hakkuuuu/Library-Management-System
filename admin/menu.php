@@ -29,7 +29,7 @@ $title = "menu";
         </span>
 
         <ul id="nav-links">
-            <li><a href="#">Dashboard</a></li>
+            <li><a href="menu.php" class="nav-link">Dashboard</a></li>
             <li><a href="adminindex.php" class="nav-link">Logout</a></li>
         </ul>
     </nav>

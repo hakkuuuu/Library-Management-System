@@ -29,7 +29,7 @@ $title = "site-home";
 		</span>
 
 		<ul id="nav-links">
-			<li><a href="menu.php">Dashboard</a></li>
+			<li><a href="menu.php" class="nav-link"> Dashboard</a></li>
 			<li><a href="index.php" class="nav-link">Logout</a></li>
 		</ul>
 	</nav>
