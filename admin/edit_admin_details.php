@@ -1,4 +1,5 @@
 <?php
+ob_start();
 require('dbconn.php');
 ?>
 
@@ -55,12 +56,14 @@ if ($_SESSION['RollNo']) {
                             <ul class="widget widget-menu unstyled">
                                 <li class="active"><a href="index.php"><i class="menu-icon icon-home"></i>Home
                                 </a></li>
+                                 <li><a href="message.php"><i class="menu-icon icon-inbox"></i>Messages</a>
                                 </li>
                                 <li><a href="student.php"><i class="menu-icon icon-user"></i>Manage Students </a>
                                 </li>
                                 <li><a href="book.php"><i class="menu-icon icon-book"></i>All Books </a></li>
                                 <li><a href="addbook.php"><i class="menu-icon icon-edit"></i>Add Books </a></li>
                                 <li><a href="requests.php"><i class="menu-icon icon-tasks"></i>Issue/Return Requests </a></li>
+                                <li><a href="recommendations.php"><i class="menu-icon icon-list"></i>Book Recommendations </a></li>
                                 <li><a href="current.php"><i class="menu-icon icon-list"></i>Currently Issued Books </a></li>
                             </ul>
                             <ul class="widget widget-menu unstyled">
@@ -72,39 +75,68 @@ if ($_SESSION['RollNo']) {
                     <!--/.span3-->
                     
                     <div class="span9">
-                        <div class="content">
-
                         <div class="module">
                             <div class="module-head">
-                                <h3>Student Details</h3>
+                                <h3>Update Details</h3>
                             </div>
                             <div class="module-body">
-                        <?php
-                            $rno=$_GET['id'];
-                            $sql="select * from LMS.user where RollNo='$rno'";
-                            $result=$conn->query($sql);
-                            $row=$result->fetch_assoc();    
-                            
+
+
+                                <?php
+                                $rollno = $_SESSION['RollNo'];
+                                $sql="select * from LMS.user where RollNo='$rollno'";
+                                $result=$conn->query($sql);
+                                $row=$result->fetch_assoc();
+
                                 $name=$row['Name'];
-                                $category=$row['Category'];
                                 $email=$row['EmailId'];
                                 $mobno=$row['MobNo'];
+                                $pswd=$row['Password'];
+                                ?>    
+                                
+                                <form class="form-horizontal row-fluid" action="edit_admin_details.php?id=<?php echo $rollno ?>" method="post">
 
+                                    <div class="control-group">
+                                        <label class="control-label" for="Name"><b>Name:</b></label>
+                                        <div class="controls">
+                                            <input type="text" id="Name" name="Name" value= "<?php echo $name?>" class="span8" required>
+                                        </div>
+                                    </div>
 
-                                echo "<b><u>Name:</u></b> ".$name."<br><br>";
-                                echo "<b><u>Category:</u></b> ".$category."<br><br>";
-                                echo "<b><u>Roll No:</u></b> ".$rno."<br><br>";
-                                echo "<b><u>Email Id:</u></b> ".$email."<br><br>";
-                                echo "<b><u>Mobile No:</u></b> ".$mobno."<br><br>"; 
-                            ?>
-                            
-                        <a href="student.php" class="btn btn-primary">Go Back</a>                             
-                               </div>
-                           </div>
+                                    <div class="control-group">
+                                        <label class="control-label" for="EmailId"><b>Email Id:</b></label>
+                                        <div class="controls">
+                                            <input type="text" id="EmailId" name="EmailId" value= "<?php echo $email?>" class="span8" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="control-group">
+                                        <label class="control-label" for="MobNo"><b>Mobile Number:</b></label>
+                                        <div class="controls">
+                                            <input type="text" id="MobNo" name="MobNo" value= "<?php echo $mobno?>" class="span8" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="control-group">
+                                        <label class="control-label" for="Password"><b>New Password:</b></label>
+                                        <div class="controls">
+                                            <input type="password" id="Password" name="Password"  value= "<?php echo $pswd?>" class="span8" required>
+                                        </div>
+                                    </div>   
+
+                                    <div class="control-group">
+                                            <div class="controls">
+                                                <button type="submit" name="submit"class="btn-primary"><center>Update Details</center></button>
+                                            </div>
+                                        </div>                                                                     
+
+                                </form>
+                                       
                         </div>
+                        </div>  
                     </div>
+                    
                     <!--/.span9-->
-
                 </div>
             </div>
             <!--/.container-->
@@ -123,6 +155,30 @@ if ($_SESSION['RollNo']) {
         <script src="scripts/flot/jquery.flot.resize.js" type="text/javascript"></script>
         <script src="scripts/datatables/jquery.dataTables.js" type="text/javascript"></script>
         <script src="scripts/common.js" type="text/javascript"></script>
+
+<?php
+if(isset($_POST['submit']))
+{
+    $rollno = $_GET['id'];
+    $name=$_POST['Name'];
+    $email=$_POST['EmailId'];
+    $mobno=$_POST['MobNo'];
+    $pswd=$_POST['Password'];
+
+$sql1="update LMS.user set Name='$name', EmailId='$email', MobNo='$mobno', Password='$pswd' where RollNo='$rollno'";
+
+
+
+if($conn->query($sql1) === TRUE){
+echo "<script type='text/javascript'>alert('Success')</script>";
+header( "Refresh:0.01; url=index.php", true, 303);
+}
+else
+{//echo $conn->error;
+echo "<script type='text/javascript'>alert('Error')</script>";
+}
+}
+?>
       
     </body>
 
