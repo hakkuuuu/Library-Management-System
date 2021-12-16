@@ -63,23 +63,23 @@ if ($_SESSION['RollNo']) {
                                     </div>
                                 </div>
                             </form>
-                        <br>
-                        <?php
-                        if (isset($_POST['submit'])) {
-                            $s = $_POST['title'];
-                            $sql = "select * from LMS.book where BookId='$s' or Title like '%$s%'";
-                        } else
-                            $sql = "select * from LMS.book";
+                            <br>
+                            <?php
+                            if (isset($_POST['submit'])) {
+                                $s = $_POST['title'];
+                                $sql = "select * from LMS.book where BookId='$s' or Title like '%$s%'";
+                            } else
+                                $sql = "select * from LMS.book";
 
-                        $result = $conn->query($sql);
-                        $rowcount = mysqli_num_rows($result);
+                            $result = $conn->query($sql);
+                            $rowcount = mysqli_num_rows($result);
 
-                        if (!($rowcount))
-                            echo "<br><center><h2><b><i>No Results</i></b></h2></center>";
-                        else {
+                            if (!($rowcount))
+                                echo "<br><center><h2><b><i>No Results</i></b></h2></center>";
+                            else {
 
 
-                        ?>
+                            ?>
                             <table class="table" id="tables">
                                 <thead>
                                     <tr>

@@ -10,21 +10,26 @@ if ($_SESSION['RollNo']) {
 <!DOCTYPE html>
 <html lang="en">
 <header id="library-header">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/menu-navbar.css" type="text/css" />
+</head>
     <h1 class="header-name">BNHS LIBRARY</h1>
     </header>
-    <nav>
-                            <ul id="nav-menu"id="nav-menu">
-                                <li class="nav-menu-links"><a class="menu-link" href="index.php">Home
-                                </a></li>
-                                <li class="nav-menu-links"><a class="menu-link" href="book.php">All Books </a></li>
-                                <li class="nav-menu-links"><a class="menu-link" href="history.php">Borrowed Books </a></li>
-                                <li class="nav-menu-links"><a class="menu-link" href="current.php">Issued Books </a></li>
-                            </ul>
-     </nav>
+
         <div class="wrapper">
             <div class="container">
                 <div class="row">
                     <div class="span9">
+                    <nav>
+                        <ul id="nav-menu"id="nav-menu">
+                            <li class="nav-menu-links"><a class="menu-link" href="index.php">Home</a></li>
+                            <li class="nav-menu-links"><a class="menu-link" href="book.php">All Books </a></li>
+                            <li class="nav-menu-links"><a class="menu-link" href="history.php">Borrowed Books </a></li>
+                            <li class="nav-menu-links"><a class="menu-link" href="current.php">Issued Books </a></li>
+                        </ul>
+                    </nav>
                         <div class="content">
 
                         <div class="module">
