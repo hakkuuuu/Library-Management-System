@@ -11,21 +11,20 @@ if ($_SESSION['RollNo']) {
 <html lang="en">
 <header id="library-header">
         <h1 class="header-name">BNHS LIBRARY</h1>
-    </header>
-    <nav>
-                            <ul id="nav-menu"id="nav-menu">
-                                <li class="nav-menu-links"><a class="menu-link" href="index.php">Home
-                                </a></li>
-                                <li class="nav-menu-links"><a class="menu-link" href="book.php">All Books </a></li>
-                                <li class="nav-menu-links"><a class="menu-link" href="history.php">Borrowed Books </a></li>
-                                <li class="nav-menu-links"><a class="menu-link" href="current.php">Issued Books </a></li>
-                            </ul>
-                            <br>
-    </nav>
+</header>
+        <nav>
+            <ul id="nav-menu"id="nav-menu">
+                 <li class="nav-menu-links"><a class="menu-link" href="index.php">Home</a></li>
+                 <li class="nav-menu-links"><a class="menu-link" href="book.php">All Books </a></li>
+                 <li class="nav-menu-links"><a class="menu-link" href="history.php">Borrowed Books </a></li>
+                <li class="nav-menu-links"><a class="menu-link" href="current.php">Issued Books </a></li>
+            </ul>
+        </nav>
         <div class="wrapper">
             <div class="container">
                 <div class="row">
                     <div class="span9">
+                    <div class="search-container">
                         <form class="form-horizontal row-fluid" action="current.php" method="post">
                                         <div class="control-group">
                                             <label class="control-label" for="Search"><b>Search:</b></label>
@@ -98,6 +97,7 @@ if ($_SESSION['RollNo']) {
                             <?php }} ?>
                                     </tbody>
                                 </table>
+                            </div>
                     </div>
                     <!--/.span9-->
                 </div>

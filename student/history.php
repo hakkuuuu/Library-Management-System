@@ -26,6 +26,7 @@ if ($_SESSION['RollNo']) {
             <div class="container">
                 <div class="row">
                     <div class="span9">
+                    <div class="search-container">
                         <form class="form-horizontal row-fluid" action="history.php" method="post">
                                         <div class="control-group">
                                             <label class="control-label" for="Search"><b>Search:</b></label>
@@ -86,6 +87,7 @@ if ($_SESSION['RollNo']) {
                             <?php }} ?>
                                     </tbody>
                                 </table>
+                            </div>
                     </div>
                     <!--/.span9-->
                 </div>

@@ -35,7 +35,7 @@ if ($_SESSION['RollNo']) {
             </span>
             <ul id="nav-links">
                 <li><a href="menu.php" class="nav-link">Dashboard</a></li>
-                <li><a href="adminindex.php" class="nav-link">Logout</a></li>
+                <li><a href="logout.php" class="nav-link">Logout</a></li>
             </ul>
         </nav>
         <header id="library-header">
