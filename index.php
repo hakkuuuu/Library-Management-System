@@ -83,7 +83,6 @@ require('dbconn.php');
 	if (isset($_POST['signin'])) {
 		$u = $_POST['RollNo'];
 		$p = $_POST['Password'];
-		$c = $_POST['Category'];
 
 		$sql = "select * from LMS.user where RollNo='$u'";
 
@@ -112,7 +111,7 @@ require('dbconn.php');
 		$rollno = $_POST['RollNo'];
 		$type = 'Student';
 
-		$sql = "insert into LMS.user (Name,Type,Category,RollNo,EmailId,MobNo,Password) values ('$name','$type','$rollno','$email','$mobno','$password')";
+		$sql = "insert into LMS.user (Name,Type,RollNo,EmailId,MobNo,Password) values ('$name','$type', '$rollno','$email','$mobno','$password')";
 
 		if ($conn->query($sql) === TRUE) {
 			echo "<script type='text/javascript'>alert('Registration Successful')</script>";
