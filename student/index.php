@@ -38,4 +38,40 @@ require_once 'includes\header.php';
   </a>
 </div>
 
+<div id="getting-started">
+      <h1 class="body-headings">WELCOME TO LMS</h1>
+      <h3 class="body-subheadings">GET STARTED</h3>
+      <div id="how-to">
+        <section class="how-to-sections">
+          <h3>HOW TO</h3>
+          <a href="#request" class="how-to-links">
+            <h3>Request a</h3>
+            <h3>Book</h3>
+            <p>Learn how to request a book from the library!</p>
+          </a>
+        </section>
+        <section class="how-to-sections">
+          <h3>HOW TO</h3>
+          <a href="#return" class="how-to-links">
+            <h3>Return a</h3>
+            <h3>Book</h3>
+            <p>Learn how to return a book from the library!</p>
+          </a>
+        </section>
+        <section class="how-to-sections">
+          <h3>MORE</h3>
+          <a href="#more" class="how-to-links">
+            <h3>Library</h3>
+            <h3>Hours</h3>
+            <p>Do know when to go to the library!</p>
+          </a>
+        </section>
+      </div>
+    </div>
+    <div id="books">
+      <h1 class="body-headings">BOOKS</h1>
+      <h3 class="body-subheadings">SEE WHAT INTERESTS YOU</h3>
+      <div id="books-container"></div>
+    </div>
+
 <?php require_once 'includes\footer.php'; ?>

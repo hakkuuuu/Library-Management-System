@@ -12,11 +12,7 @@ if ($_SESSION['RollNo']) {
 <header id="library-header">
         <h1 class="header-name">BNHS LIBRARY</h1>
     </header>
-        <div class="wrapper">
-            <div class="container">
-                <div class="row">
-                    <div class="span3">
-                    <nav>
+    <nav>
                             <ul id="nav-menu"id="nav-menu">
                                 <li class="nav-menu-links"><a class="menu-link" href="index.php">Home
                                 </a></li>
@@ -25,7 +21,10 @@ if ($_SESSION['RollNo']) {
                                 <li class="nav-menu-links"><a class="menu-link" href="current.php">Issued Books </a></li>
                             </ul>
                             <br>
-                        </nav>
+    </nav>
+        <div class="wrapper">
+            <div class="container">
+                <div class="row">
                     <div class="span9">
                         <form class="form-horizontal row-fluid" action="current.php" method="post">
                                         <div class="control-group">
@@ -105,11 +104,6 @@ if ($_SESSION['RollNo']) {
             </div>
             <!--/.container-->
         </div>
-<div class="footer">
-            <div class="container">
-                <b class="copyright">&copy; 2018 Library Management System </b>All rights reserved.
-            </div>
-        </div>
         
         <!--/.wrapper-->
         <script src="scripts/jquery-1.9.1.min.js" type="text/javascript"></script>
@@ -128,3 +122,4 @@ if ($_SESSION['RollNo']) {
 else {
     echo "<script type='text/javascript'>alert('Access Denied!!!')</script>";
 } ?>
+<?php require_once 'includes\footer.php'; ?>

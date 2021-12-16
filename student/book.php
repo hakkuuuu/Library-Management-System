@@ -12,12 +12,8 @@ if ($_SESSION['RollNo']) {
 <header id="library-header">
     <h1 class="header-name">BNHS LIBRARY</h1>
     </header>
-        <div class="wrapper">
-            <div class="container">
-                <div class="row">
-                    <div class="span3">
-                    <div class="span9">
-                        <nav>
+    
+    <nav>
                             <ul id="nav-menu"id="nav-menu">
                                 <li class="nav-menu-links"><a class="menu-link" href="index.php">Home
                                 </a></li>
@@ -25,7 +21,13 @@ if ($_SESSION['RollNo']) {
                                 <li class="nav-menu-links"><a class="menu-link" href="history.php">Borrowed Books </a></li>
                                 <li class="nav-menu-links"><a class="menu-link" href="current.php">Issued Books </a></li>
                             </ul>
-                        </nav>
+    </nav>
+
+        <div class="wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="span3">
+                    <div class="span9">
                         <div class="search-container">
                         <form class="form-horizontal row-fluid" action="book.php" method="post">
                                         <div class="control-group">

@@ -110,11 +110,14 @@ body {
   font-size: 1.1em;
   bottom: 10px;
 }
-.search-container, .content{
+.search-container,
+.content {
   width: 100%;
   margin-left: 15vw;
 }
-.span9, .wrapper, .span3 {
+.span9,
+.wrapper,
+.span3 {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -124,7 +127,7 @@ body {
 .issue-return-container a {
   text-decoration: none;
 }
-.issue-return-container{
+.issue-return-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -146,14 +149,20 @@ body {
   height: 10vw;
   margin: 10vw 15vw 5vw 15vw;
 }
-#renew-request-container{
+#renew-request-container {
   margin-left: 15vw;
 }
-#issue-request-table, #renew-request-table, #return-request-table {
+#issue-request-table,
+#renew-request-table,
+#return-request-table {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   margin-left: 15vw;
+}
+
+nav {
+  float: left;
 }
